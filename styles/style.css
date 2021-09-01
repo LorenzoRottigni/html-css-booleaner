@@ -1,76 +1,104 @@
-header div{
-    background-image: url('/img/pattern.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #4ea0ff;
-    padding-top: 5%;
-}
-header div img{
-    width: 30%;
-}
-header h1{
-    font-size: 3em;
-    margin-top: 1%;
-    margin-bottom: 0;
-}
-header h3, body h3{
+/*******************************************************/
+/**********************GLOBAL SELECTORS*****************/
+/*******************************************************/
+h3{
     color: #858585;
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 0;
 }
-header h3 span{
+
+/********************************************************/
+/**********************PAGE SELECTORS********************/
+/********************************************************/
+
+/****************HEADER***********************/
+
+header section div{
+    background-image: url('/img/pattern.png');
+    background-size: contain;
+    background-color: #4ea0ff;
+    padding-top: 5%;
+}
+header section div img{
+    width: 30%;
+}
+
+/******************TITLES********************/
+
+header section h1{
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+header section h3 span{
     color:#50bbea
 }
-header h4{
+header section h4{
     color: #858585;
     font-size: 1em;
     margin-top: 0;
     margin-bottom: 0;
 }
-main figure{
+
+/***********2 MAIN IMAGES****************/
+
+main section figure{
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
     padding: 0px
 }
-main figure figcaption{
+main section figure figcaption{
     white-space: pre-line;
     font-size: 0.8em;
     margin-top: -1%;
 }
-main p{
+main section div{
     white-space: pre-line;
 }
-main p span{
+main section div ul{
+    padding-left: 1%;
+    border-spacing: 0px;
+    border-collapse: separate;
+    line-height:85%
+}
+main section span{
     background-color: yellow;
 }
-ul{
-    padding-left: 1%;
-}
-main table{
+/*************MAIN TABLE STYLE***************/
+
+main section table{
     margin: 0;
     padding: 0;
     border-spacing: 0px;
     width: 100%;
 }
-
-td, th{
+main section table thead tr{
+    background-color: #50bbea;
+    color: white;
+    font-weight: bold;
+}
+main section table td, th{
     white-space: pre-line;
     padding: 0;
     border: 0;
     text-align: left;
 }
+
+/*selettori della prima riga del tbody e l'ultima riga del tbody*/
+
 table tbody tr:last-child, table tbody tr:first-child{
     background-color: #b1e5f2;
 }
-table thead tr{
-    background-color: #50bbea;
-    color: white;
-    font-weight: bold;
-}
-footer div{
+
+/****************************************************************************/
+/***************************FOOTER*******************************************/
+/****************************************************************************/
+/*definizione div footer*/
+footer section div{
     background-image: url('/img/monitor.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,6 +111,7 @@ footer div{
     padding-top: 1%;
     margin-top: 1%;
 }
-footer div:last-child{
+/*selettore ultimo div del footer che sovvrascrive la regola generale dei div nel footer*/
+footer section div:last-child{
     background-image: url('/img/graph.jpg');
 }
